@@ -1,2 +1,2 @@
-# Data-Structure-Algorithm-2
-Individual Assignment 
+# Modified Dynamic Programming Algorithm
+
