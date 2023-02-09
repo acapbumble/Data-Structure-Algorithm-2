@@ -52,7 +52,7 @@ There are two set of codes. Basic and the modified version of it. The purpose of
 ## What are the issues with the basic code that makes the modified code better and more optimized?
 The original code has a time complexity of O(n * m) because it uses two nested loops to iterate through both power_plants and loads arrays. This means that the number of iterations grows quadratically with the size of the input. It does not sort the power_plants array in either ascending or descending order. It is just a straight-forward dynamic programming solution that distributes the load from the power plants to the loads using two nested loops.
 
-In the modified code, the time complexity is also O(n * m) but it sorts the power_plants array in ascending order and using a single loop to iterate through the loads array. This makes it possible to eliminate one of the nested loops and reduce the overall number of iterations. Additionally, the inner loop is optimized by starting from the end and iterating in reverse, which helps to avoid recalculations.
+In the modified code, the time complexity is also O(n * m) but it sorts the power_plants array in ascending order and uses a single loop to iterate through the loads array. This makes it possible to eliminate one of the nested loops and reduce the overall number of iterations. Additionally, the inner loop is optimized by starting from the end and iterating in reverse, which helps to avoid recalculations.
 
 Another optimization in the modified code is the use of a one-dimensional dp array instead of a two-dimensional array. This helps to reduce the amount of memory needed to store the intermediate results, which can be an important consideration in large-scale problems.
 
