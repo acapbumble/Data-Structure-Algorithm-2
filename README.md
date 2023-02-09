@@ -1,8 +1,8 @@
 # Modified Dynamic Programming Algorithm (Distribution of power plant load)
 
 ## How to run the codes
-1) Open the basic & modified code
-2) click on run (depends on what compliler you use)
+1) Open the 'basic.py' & 'modified.py' codes
+2) Click on run (depends on what compliler you use)
 
 ## Abstract
 This report is about modifying a dynamic programming algorithm to find the maximum load that can be distributed in a power plant load, with the purpose of optimizing it. This report is referenced by an article I chose [Modified Dynamic Programming Algorithm and Its Application in
@@ -57,6 +57,22 @@ In the modified code, the time complexity is also O(n * m) but it sorts the powe
 Another optimization in the modified code is the use of a one-dimensional dp array instead of a two-dimensional array. This helps to reduce the amount of memory needed to store the intermediate results, which can be an important consideration in large-scale problems.
 
 Overall, the modified code is more optimized than the original code because it reduces the number of iterations, avoids recalculations, and uses less memory.
+
+## Performance
+I have used the 'time' library to measure the time taken by the algorithm to complete its execution and compare it with the basic and modified algorithm.
+### How to use the code
+1) Open the 'measure_performance.py' code
+2) Click on run (depends on what compliler you use)
+### Explanation of the 'measure_performance.py' code
+![image](https://user-images.githubusercontent.com/106312010/217916102-c15f95b5-37bc-4e1f-8d90-fae89197da95.png)
+  - The time.time() function is used to get the current time in seconds since the epoch (the point in time at which time starts), which is used to determine the start and end of each algorithm's execution. The difference between the start and end times is the execution time for each iteration of the algorithm.
+  - The run_and_time_algorithm function is used to run each algorithm num_times times (1000 times) and average the execution time. This provides a more accurate representation of the execution time, since it takes into account any fluctuations in the execution time due to other processes running on the machine.
+  - The percentage_difference variable calculates the difference in time between the original algorithm and the modified algorithm as a percentage of the original time. This allows us to see how much faster (or slower) the modified algorithm is compared to the original algorithm.
+
+### The results
+![image](https://user-images.githubusercontent.com/106312010/217915898-c8e4154f-ffd9-4529-ba34-269322563a6d.png)
+![image](https://user-images.githubusercontent.com/106312010/217915720-714c7e50-1617-44e4-9c6c-bf2c4349191a.png)
+![image](https://user-images.githubusercontent.com/106312010/217915773-6f4999a5-2128-4e2c-a943-343427344871.png)
 
 
 
