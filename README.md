@@ -12,19 +12,15 @@ Distribution of Power Plant Load](https://www.e3s-conferences.org/articles/e3sco
 There are two set of codes. Basic and the modified version of it. The purpose of this modification is to optimize the code by reducing the calculation time and memory usage. The rest of the report will show you how it is done, the performance of each code and its comparison with a conclusion.
 
 ## Basic Dynamic Programming
-Initialize two variables n and m with the length of the power_plants and loads arrays respectively.
+1) Initialize two variables n and m with the length of the power_plants and loads arrays respectively.
+2) Create a 2D array dp with n + 1 rows and m + 1 columns. This array will be used to store the intermediate results during the calculation.
+3) Use a nested loop to iterate over the power_plants and loads arrays. The outer loop ranges from 1 to n + 1, and the inner loop ranges from 1 to m + 1.
+4) For each iteration of the loop, check if the current load is less than or equal to the current power plant capacity.
 
-Create a 2D array dp with n + 1 rows and m + 1 columns. This array will be used to store the intermediate results during the calculation.
+- If it is, calculate the maximum value between the current cell's value and the value from the previous cell plus the current load.
+- If it is not, set the current cell's value to the value from the previous cell.
+- Repeat steps 4 for all cells in the dp array.
 
-Use a nested loop to iterate over the power_plants and loads arrays. The outer loop ranges from 1 to n + 1, and the inner loop ranges from 1 to m + 1.
-
-For each iteration of the loop, check if the current load is less than or equal to the current power plant capacity.
-
-If it is, calculate the maximum value between the current cell's value and the value from the previous cell plus the current load.
-If it is not, set the current cell's value to the value from the previous cell.
-Repeat steps 4 for all cells in the dp array.
-
-Return the value in the last cell of the dp array, which represents the maximum load that can be distributed among the power plants.
-
-Finally, the maximum load is printed by calling the distribute_power_plant_load function with power_plants and loads as arguments.
+5) Return the value in the last cell of the dp array, which represents the maximum load that can be distributed among the power plants.
+6) Finally, the maximum load is printed by calling the distribute_power_plant_load function with power_plants and loads as arguments.
 
