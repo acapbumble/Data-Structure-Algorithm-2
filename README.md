@@ -75,7 +75,11 @@ I have used the 'time' library to measure the time taken by the algorithm to com
 ![image](https://user-images.githubusercontent.com/106312010/217915720-714c7e50-1617-44e4-9c6c-bf2c4349191a.png)
 ![image](https://user-images.githubusercontent.com/106312010/217915773-6f4999a5-2128-4e2c-a943-343427344871.png)
 
-As shown in the results above the average is between
+As shown in the results above, the average time taken to complete the execution is above 30%.
+
+## Conclusion
+
+Continuing from the results, It is now clear that the modified algorithm has drastically reduced the run time which is very useful when involving large number of loads and power plants. This was possible by using 1D DP instead of 2D, adding an early exit condition that stops filling the DP table as soon as the total load has been completely distributed and sorting thee aray in an ascending order & using binary search to find the appropriate power plant for a given load.
 
 
 
