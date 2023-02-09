@@ -64,15 +64,20 @@ I have used the 'time' library to measure the time taken by the algorithm to com
 1) Open the 'measure_performance.py' code
 2) Click on run (depends on what compliler you use)
 ### Explanation of the 'measure_performance.py' code
-![image](https://user-images.githubusercontent.com/106312010/217916102-c15f95b5-37bc-4e1f-8d90-fae89197da95.png)
-  - The time.time() function is used to get the current time in seconds since the epoch (the point in time at which time starts), which is used to determine the start and end of each algorithm's execution. The difference between the start and end times is the execution time for each iteration of the algorithm.
-  - The run_and_time_algorithm function is used to run each algorithm num_times times (1000 times) and average the execution time. This provides a more accurate representation of the execution time, since it takes into account any fluctuations in the execution time due to other processes running on the machine.
-  - The percentage_difference variable calculates the difference in time between the original algorithm and the modified algorithm as a percentage of the original time. This allows us to see how much faster (or slower) the modified algorithm is compared to the original algorithm.
+![image](https://user-images.githubusercontent.com/106312010/217917592-7c0ef567-188c-4d39-baa1-1e2308ade286.png)
+
+  - The **time.time()** function is used to get the current time in seconds since the epoch (the point in time at which time starts), which is used to determine the start and end of each algorithm's execution. The difference between the start and end times is the execution time for each iteration of the algorithm.
+  - The **run_and_time_algorithm** function is used to run each algorithm num_times times (1000 times) and average the execution time. This provides a more accurate representation of the execution time, since it takes into account any fluctuations in the execution time due to other processes running on the machine.
+  - The **percentage_difference** variable calculates the difference in time between the original algorithm and the modified algorithm as a percentage of the original time. This allows us to see how much faster (or slower) the modified algorithm is compared to the original algorithm.
 
 ### The results
 ![image](https://user-images.githubusercontent.com/106312010/217915898-c8e4154f-ffd9-4529-ba34-269322563a6d.png)
 ![image](https://user-images.githubusercontent.com/106312010/217915720-714c7e50-1617-44e4-9c6c-bf2c4349191a.png)
 ![image](https://user-images.githubusercontent.com/106312010/217915773-6f4999a5-2128-4e2c-a943-343427344871.png)
+
+As shown in the results above the average is between
+
+
 
 
 
